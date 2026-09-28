@@ -1,2 +1,2 @@
 # Stronatml
-Strona do nowych ćwiczeń
+Strona do nowych ćwiczeń  https://sazonizm.github.io/Stronatml/
