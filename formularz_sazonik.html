@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Herman Sazonik">
+<title>Formularz - Herman Sazonik</title>
+</head>
+<body style="background-color:#e6f7ff; font-family:Arial;">
+
+<h1>Formularz zainteresowań komputerowych - Herman Sazonik</h1>
+<p>Kolor tła: #e6f7ff</p>
+<form action="mailto:" method="post" enctype="text/plain" style="background:#e6f7ff; padding:15px;">
+<p>Imię: <input type="text" name="imie"></p>
+<p>Nazwisko: <input type="text" name="nazwisko" value="Sazonik"></p>
+<p>Login: <input type="text" name="login" maxlength="16"></p>
+<p>Hasło: <input type="password" name="haslo"></p>
+<p>E-mail: <input type="email" name="email"></p>
+<p>Wybierz system operacyjny:
+<select name="system"><option selected>Windows</option><option>Linux</option><option>macOS</option><option>Android</option><option>iOS</option></select></p>
+<p>Wybierz przeglądarkę:
+<select name="przegladarka"><option>Chrome</option><option>Firefox</option><option>Edge</option><option>Opera</option></select></p>
+<p>Poziom znajomości HTML:
+<select name="html"><option selected>Początkujący</option><option>Średni</option><option>Zaawansowany</option></select></p>
+<p>Jaki komputer posiadasz?</p>
+<label><input type="radio" name="komputer" value="Laptop" checked>Laptop</label>
+<label><input type="radio" name="komputer" value="PC">Komputer stacjonarny</label>
+<label><input type="radio" name="komputer" value="Tablet">Tablet</label>
+<label><input type="radio" name="komputer" value="Inny">Inny</label>
+<p>Jakie urządzenia posiadasz?</p>
+<p><label><input type="checkbox" name="urzadzenie" value="Mysz">Mysz</label><br>
+<label><input type="checkbox" name="urzadzenie" value="Klawiatura">Klawiatura</label><br>
+<label><input type="checkbox" name="urzadzenie" value="Sluchawki">Słuchawki</label><br>
+<label><input type="checkbox" name="urzadzenie" value="Drukarka">Drukarka</label></p>
+<p>Ulubiony język programowania:</p>
+<label><input type="radio" name="jezyk" value="HTML">HTML</label>
+<label><input type="radio" name="jezyk" value="Python">Python</label>
+<label><input type="radio" name="jezyk" value="Java">Java</label>
+<p>Co chcesz rozwijać?</p>
+<label><input type="checkbox" name="nauka" value="Strony">Tworzenie stron</label><br>
+<label><input type="checkbox" name="nauka" value="Gry">Tworzenie gier</label><br>
+<label><input type="checkbox" name="nauka" value="Sieci">Sieci komputerowe</label>
+<p>Wybierz ulubiony kolor:</p>
+<label><input type="radio" name="kolor" value="Niebieski">Niebieski</label>
+<label><input type="radio" name="kolor" value="Zielony">Zielony</label>
+<label><input type="radio" name="kolor" value="Czerwony">Czerwony</label>
+<label><input type="radio" name="kolor" value="Czarny">Czarny</label>
+<label><input type="radio" name="kolor" value="Fioletowy">Fioletowy</label>
+<p>Dodatkowe informacje:</p>
+<textarea name="informacje" rows="5" cols="45" maxlength="300"></textarea>
+<p>Przycisk 1: <button type="button" onclick="alert('Wybrałeś formularz komputerowy!')">Pokaż komunikat</button>
+<button type="button" onclick="this.innerHTML='Dziękuję!'">Kliknij mnie</button></p>
+<p><input type="submit" value="WYŚLIJ"> <input type="reset" value="CZYŚĆ"></p>
+</form>
+<p>Uwaga: aby wysłać formularz, skonfiguruj własny adres e-mail w atrybucie action formularza.</p>
+<p><a href="index.html">Wróć do strony głównej</a></p>
+
+</body>
+</html>

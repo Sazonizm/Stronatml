@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dane komputerowe - Sazonik Herman</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .table-box {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #d8d8d8;
+            border: 1px solid #999;
+        }
+
+        .table-title {
+            text-align: center;
+            font-size: 26px;
+            padding: 18px 15px;
+            color: #555;
+            background-color: #cfd4d8;
+            border-bottom: 1px solid #999;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #c69c72;
+            color: #5c4938;
+            font-size: 18px;
+            padding: 10px 8px;
+            border: 1px solid #a8825d;
+            line-height: 1.2;
+        }
+
+        td {
+            padding: 6px 10px;
+            font-size: 16px;
+            color: #eee;
+            border: 1px solid #9aa87a;
+            text-align: center;
+        }
+
+        /* Чередование строк как на фото */
+        tbody tr:nth-child(odd) td:not(.cool-col) {
+            background-color: #7d9654;
+        }
+
+        tbody tr:nth-child(even) td:not(.cool-col) {
+            background-color: #8fa863;
+        }
+
+        /* Объединенная колонка "Typ chłodzenia" */
+        .cool-col {
+            background-color: #b7cc88;
+            color: #c5d69d;
+            font-size: 22px;
+            vertical-align: middle;
+            width: 24%;
+        }
+
+        .table-footer {
+            background-color: #9e7b56;
+            color: #e6d5c3;
+            text-align: center;
+            font-weight: bold;
+            font-size: 17px;
+            padding: 8px;
+            border-top: 1px solid #856646;
+        }
+    </style>
+</head>
+<body>
+
+<div class="table-box">
+    <div class="table-title">Dane komputerowe – Sezonik Herman</div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Model karty<br>graficznej</th>
+                <th>Taktowanie<br>bazowe</th>
+                <th>Rozmiar<br>pamięci</th>
+                <th>Szyna<br>pamięci</th>
+                <th>Typ<br>chłodzenia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>RTX 2010</td>
+                <td>2121 MHz</td>
+                <td>4GB</td>
+                <td>96-bit</td>
+                <td class="cool-col" rowspan="6">Aktywne</td>
+            </tr>
+            <tr>
+                <td>RTX 2040</td>
+                <td>1777 MHz</td>
+                <td>4GB</td>
+                <td>130-bit</td>
+            </tr>
+            <tr>
+                <td>RTX 2030</td>
+                <td>2333 MHz</td>
+                <td>6GB</td>
+                <td>193-bit</td>
+            </tr>
+            <tr>
+                <td>GTX 1100</td>
+                <td>1551 MHz</td>
+                <td>9GB</td>
+                <td>234-bit</td>
+            </tr>
+            <tr>
+                <td>GTX 1040</td>
+                <td>1820 MHz</td>
+                <td>10GB</td>
+                <td>256-bit</td>
+            </tr>
+            <tr>
+                <td>GTX 1550</td>
+                <td>2000 MHz</td>
+                <td>17GB</td>
+                <td>266-bit</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="table-footer">Dane komputerowe</div>
+</div>
+
+</body>
+</html>
